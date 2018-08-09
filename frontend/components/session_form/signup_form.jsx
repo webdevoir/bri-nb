@@ -45,34 +45,34 @@ class SignupForm extends React.Component {
 
     render() {
         return (
-            <div className="signup-form-container">
-                <form onSubmit={this.handleSubmit} className="signup-form-box">
+            <div className="login-form-container">
+                <form onSubmit={this.handleSubmit} className="login-form-box">
                     <div onClick={this.props.closeModal} className="close-x">X</div>
 					<br />
                     {this.renderErrors()}
-                    <div className="signup-form">
+                    <div className="login-form">
                         <br />
-                        <input type="text"
+                        <input type="email"
                             placeholder="Email address"
                             value={this.state.email}
                             onChange={this.update("email")}
-                            className="signup-input" />
+                            className="login-input" />
                         <br />
                         <input type="text"
                             placeholder="First name"
                             value={this.state.first_name}
                             onChange={this.update("first_name")}
-                            className="signup-input" />
+                            className="login-input" />
                         <input type="text"
                             placeholder="Last name"
                             value={this.state.last_name}
                             onChange={this.update("last_name")}
-                            className="signup-input" />
+                            className="login-input" />
                         <input type="password"
                             placeholder="Create a Password"
                             value={this.state.password}
                             onChange={this.update("password")}
-                            className="signup-input" />
+                            className="login-input" />
                         <br />
                         <button type="submit">Submit</button>
                     </div>

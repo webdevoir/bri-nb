@@ -30,3 +30,32 @@
      left: 50%;
      transform: translate(-50%, -50%);
  }
+
+ .login-form-container {
+     display: flex;
+     justify-content: center;
+ }
+
+ .login-form {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+ }
+
+ .login-input {
+     margin-left: 20px;
+ }
+
+ .login-form-box {
+     outline: 1px solid black;
+     padding: 20px;
+     background: white;
+     position: relative;
+ }
+
+ .close-x {
+     position: absolute;
+     top: 5px;
+     right: 5px;
+     cursor: pointer;
+ }
