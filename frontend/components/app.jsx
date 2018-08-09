@@ -1,11 +1,17 @@
 import React from 'react';
 import GreetingContainer from './greeting/greeting_container';
+import Modal from './modal/modal';
+import { NavLink } from 'react-router-dom';
 
 const App = ({ children }) => (
     <div>
-        <h1>bri-nb</h1>
-        <GreetingContainer />
-        {children}
+        <Modal />
+        <header>
+            <NavLink to="/" className="header-link">
+                <h1>Bri-nb</h1>
+            </NavLink>
+            <GreetingContainer />
+        </header>
     </div>
 );
 
