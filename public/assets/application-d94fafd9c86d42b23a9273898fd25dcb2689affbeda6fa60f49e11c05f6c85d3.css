@@ -1,0 +1,1048 @@
+/* line 1, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/global/global.scss */
+body {
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+
+html {
+    line-height: 1.15;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+    margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+    box-sizing: content-box;
+    /* 1 */
+    height: 0;
+    /* 1 */
+    overflow: visible;
+    /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+    background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+    border-bottom: none;
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    text-decoration: underline dotted;
+    /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+    border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    /* 1 */
+    font-size: 100%;
+    /* 1 */
+    line-height: 1.15;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+    /* 1 */
+    overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+    /* 1 */
+    text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+    box-sizing: border-box;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    display: table;
+    /* 1 */
+    max-width: 100%;
+    /* 1 */
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+    /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+    vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+    overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+    display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+    display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+    display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+    display: none;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 7, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/global/reset.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 98, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/global/reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* line 112, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/global/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 116, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/global/reset.scss */
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 121, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/global/reset.scss */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* line 126, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/global/reset.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 134, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/global/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(global/normalize.css);
+/* line 6, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/global/reset.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 97, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/global/reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* line 111, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/global/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 115, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/global/reset.scss */
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 120, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/global/reset.scss */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* line 125, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/global/reset.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 133, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/global/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/global/global.scss */
+body {
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 1, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/nav/nav.scss */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.43;
+}
+
+/* line 13, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/nav/nav.scss */
+.navbar ul {
+  display: table;
+  height: 64px !important;
+  list-style: none !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+/* line 21, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/nav/nav.scss */
+.navbar li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  margin-left: 24px;
+  height: 80px;
+  line-height: 80px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* line 32, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/nav/nav.scss */
+.navbar li:hover {
+  border-bottom: 1px solid black;
+}
+
+/* line 36, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/nav/nav.scss */
+.navbar li button {
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 43, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/nav/nav.scss */
+.navbar li:last-child {
+  margin-right: 20px;
+}
+
+/* line 47, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/nav/nav.scss */
+svg {
+  padding: 20px;
+  height: 2.5em;
+  width: 2.5em;
+  display: block;
+  fill: black;
+  transform: rotate(-90deg);
+}
+
+/* line 1, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/modal/modal.scss */
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+/* line 11, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/modal/modal.scss */
+.modal-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 1, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+.login-form-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 6, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+.login-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* line 12, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+.login-input {
+  margin-left: 20px;
+}
+
+/* line 16, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+.login-form-box {
+  outline: 1px solid black;
+  padding: 20px;
+  width: 568px;
+  height: 783px;
+  background: white;
+  position: relative;
+}
+
+/* line 25, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+.close-x {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+/* line 32, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+.close-x svg {
+  height: 16px;
+  width: 16px;
+  display: block;
+  fill: #767676;
+}
+
+/* line 39, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+.login-form-container button {
+  cursor: pointer;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+  font-weight: 800 !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  min-width: 77.6656px !important;
+  box-shadow: none !important;
+  color: white !important;
+  margin: 0px !important;
+  text-decoration: none !important;
+  border-radius: 4px !important;
+  border-width: 2px !important;
+  border-style: solid !important;
+  background: #ff5a5f !important;
+  border-color: transparent !important;
+  box-sizing: border-box;
+}
+
+/* line 59, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+input {
+  font-size: 16px !important;
+  line-height: 22px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  color: #484848 !important;
+  font-weight: normal !important;
+  background-color: transparent !important;
+  width: 100% !important;
+  border: 1px solid #e7e7e7;
+  padding: 11px !important;
+  display: block;
+  border-radius: 2px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+/* line 81, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+.line-container {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* line 86, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+.line {
+  border-bottom: 1px solid #ebebeb !important;
+  display: block;
+}
+
+/* line 91, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+.redirect {
+  text-align: center;
+}
+
+/* line 95, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+.login-form-container a {
+  cursor: pointer;
+  color: #008489 !important;
+  text-align: left !important;
+  font: inherit inherit inherit inherit inherit inherit inherit inherit inherit !important;
+  font-weight: 500;
+  text-decoration: none !important;
+}
+/* line 1, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/modal/modal.scss */
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+/* line 11, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/modal/modal.scss */
+.modal-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* line 1, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/nav/nav.scss */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.43;
+}
+
+/* line 13, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/nav/nav.scss */
+.navbar ul {
+  display: table;
+  height: 64px !important;
+  list-style: none !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+/* line 21, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/nav/nav.scss */
+.navbar li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  margin-left: 24px;
+  height: 80px;
+  line-height: 80px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* line 32, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/nav/nav.scss */
+.navbar li:hover {
+  border-bottom: 1px solid black;
+}
+
+/* line 36, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/nav/nav.scss */
+.navbar li button {
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 43, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/nav/nav.scss */
+.navbar li:last-child {
+  margin-right: 20px;
+}
+
+/* line 47, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/nav/nav.scss */
+svg {
+  padding: 20px;
+  height: 2.5em;
+  width: 2.5em;
+  display: block;
+  fill: black;
+  transform: rotate(-90deg);
+}
+/* line 1, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+.login-form-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 6, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+.login-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* line 12, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+.login-input {
+  margin-left: 20px;
+}
+
+/* line 16, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+.login-form-box {
+  outline: 1px solid black;
+  padding: 20px;
+  width: 568px;
+  height: 783px;
+  background: white;
+  position: relative;
+}
+
+/* line 25, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+.close-x {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+/* line 32, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+.close-x svg {
+  height: 16px;
+  width: 16px;
+  display: block;
+  fill: #767676;
+}
+
+/* line 39, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+.login-form-container button {
+  cursor: pointer;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+  font-weight: 800 !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  min-width: 77.6656px !important;
+  box-shadow: none !important;
+  color: white !important;
+  margin: 0px !important;
+  text-decoration: none !important;
+  border-radius: 4px !important;
+  border-width: 2px !important;
+  border-style: solid !important;
+  background: #ff5a5f !important;
+  border-color: transparent !important;
+  box-sizing: border-box;
+}
+
+/* line 59, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+input {
+  font-size: 16px !important;
+  line-height: 22px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  color: #484848 !important;
+  font-weight: normal !important;
+  background-color: transparent !important;
+  width: 100% !important;
+  border: 1px solid #e7e7e7;
+  padding: 11px !important;
+  display: block;
+  border-radius: 2px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+/* line 81, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+.line-container {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* line 86, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+.line {
+  border-bottom: 1px solid #ebebeb !important;
+  display: block;
+}
+
+/* line 91, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+.redirect {
+  text-align: center;
+}
+
+/* line 95, /Users/bjjeong/Sync/0 - aA/bri-nb/app/assets/stylesheets/session/session.scss */
+.login-form-container a {
+  cursor: pointer;
+  color: #008489 !important;
+  text-align: left !important;
+  font: inherit inherit inherit inherit inherit inherit inherit inherit inherit !important;
+  font-weight: 500;
+  text-decoration: none !important;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
