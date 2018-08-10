@@ -6,10 +6,11 @@ import { NavLink } from 'react-router-dom';
 const App = ({ children }) => (
     <div className="home-page">
         <Modal />
-        <div className="full">
+        <div>
             <NavContainer />
+            {/* <HomepageContainer /> */}
             <div className="home-searchbar">
-                <input type="text" placeholder="Try 'Homes in Seoul'"/>
+                <input type="text" placeholder="Try 'Homes in Tokyo'"/>
             </div>
         </div>
     </div>
