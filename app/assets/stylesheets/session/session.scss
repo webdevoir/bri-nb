@@ -1,42 +1,128 @@
+section {
+    display: block;
+    box-sizing: border-box;
+}
+
 .login-form-container {
     display: flex;
     justify-content: center;
+    width: 568px;
+    height: 783px;
+    outline: 1px solid black;
+    background: white;
+
 }
 
-.login-form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.login-input {
-    margin-left: 20px;
+.login-form-container {
+    background-color: rgb(255, 255, 255) !important;
+    box-sizing: border-box !important;
+    padding: 32px !important;
+    display: block;
 }
 
 .login-form-box {
-    outline: 1px solid black;
     padding: 20px;
-    width: 568px;
-    height: 783px;
-    background: white;
-    position: relative;
+    display: block;
+    margin-top: 0em;
+}
+
+.login-form {
+    margin-bottom: 16px;
+}
+
+.input-container {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+.input-container-2 {
+    font-size: 16px !important;
+    line-height: 22px !important;
+    letter-spacing: normal !important;
+    font-family: Circular,
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    "Helvetica Neue",
+    sans-serif !important;
+    color: rgb(72, 72, 72) !important;
+    background-color: rgb(255, 255, 255) !important;
+    margin-bottom: 8px !important;
+    position: relative !important;
+    z-index: 0 !important;
+    display: block !important;
+    width: 100% !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: rgb(235, 235, 235) !important;
+    border-radius: 2px !important;
+}
+
+.input-icon {
+    float: right !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    letter-spacing: normal !important;
+    font-family: Circular,
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    "Helvetica Neue",
+    sans-serif !important;
+    color: rgb(72, 72, 72) !important;
+}
+
+.input-icon svg {
+    height: 1em;
+    width: 1em;
+    display: block;
+    fill: currentcolor;
+    transform: rotate(0deg);
+}
+
+.form-input {
+    position: relative !important;
+    overflow: hidden !important;
+    display: block;
+    box-sizing: border-box;
 }
 
 .close-x {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    cursor: pointer;
+    margin-bottom: 24px !important;
+    box-sizing: border-box;
+    display: block;
 }
 
-.close-x svg {
+.x-button {
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer !important;
+    background-color: transparent !important;
+    color: buttontext !important;
+    display: block !important;
+    border-width: 0px !important;
+    border-style: initial !important;
+    border-color: initial !important;
+    border-image: initial !important;
+    -webkit-appearance: button;
+    align-items: flex-start;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.x-button svg {
     height: 16px;
-    width: 16px; 
-    display: block; 
+    width: 16px;
+    display: block;
     fill: rgb(118, 118, 118);
+    overflow: hidden;
+    cursor: pointer !important;
+    box-sizing: border-box;
 }
 
-.login-form-container button {
+.login-form button {
     cursor: pointer;
     padding-top: 12px !important;
     padding-bottom: 12px !important;
@@ -54,9 +140,27 @@
     background: rgb(255, 90, 95) !important;
     border-color: transparent !important;
     box-sizing: border-box;
+    display: block;
+    width: 100%;
 }
 
-input {
+.button-text {
+    font-size: 16px !important;
+    line-height: 22px !important;
+    letter-spacing: normal !important;
+    font-family: Circular,
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    "Helvetica Neue",
+    sans-serif !important;
+    color: inherit !important;
+    cursor: pointer !important;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.login-input {
     font-size: 16px !important;
     line-height: 22px !important;
     letter-spacing: normal !important;
@@ -70,11 +174,10 @@ input {
     font-weight: normal !important;
     background-color: transparent !important;
     width: 100% !important;
-    border: 1px solid rgb(231, 231, 231);
+    border: none;
     padding: 11px !important;
     display: block;
     border-radius: 2px;
-    margin-bottom: 16px;
     box-sizing: border-box;
 }
 
