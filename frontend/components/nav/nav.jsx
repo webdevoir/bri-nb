@@ -34,7 +34,7 @@ class Nav extends React.Component {
                                 <button>Sign up</button>
                             </li>
                             <li onClick={() => openModal('login')}>
-                                <button>Login</button>
+                                <button>Log in</button>
                             </li>
                         </ul>
                     </div>

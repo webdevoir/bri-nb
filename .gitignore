@@ -2,6 +2,7 @@
 # compiled from github.com/github/gitignore #
 #############################################
 
+yarn.lock
 ### Custom ###
 *.db
 *.sqlite*
