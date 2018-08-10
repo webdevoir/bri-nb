@@ -1,5 +1,6 @@
 import React from 'react';
 import NavContainer from './nav/nav_container';
+import HomepageContainer from './homepage/homepage_container';
 import Modal from './modal/modal';
 import { NavLink } from 'react-router-dom';
 
@@ -8,10 +9,7 @@ const App = ({ children }) => (
         <Modal />
         <div>
             <NavContainer />
-            {/* <HomepageContainer /> */}
-            <div className="home-searchbar">
-                <input type="text" placeholder="Try 'Homes in Tokyo'"/>
-            </div>
+            <HomepageContainer />
         </div>
     </div>
 );
