@@ -22,7 +22,7 @@
     list-style: none;
     display: inline-block;
     text-align: center;
-    margin-left: 21px;
+    margin-left: 19px;
     height: 80px;
     line-height: 80px;
     box-sizing: border-box;
@@ -30,13 +30,16 @@
 }
 
 .navbar li:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .navbar li button {
     border: none;
     text-align: center;
     cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
 
 }
 
@@ -49,6 +52,6 @@ svg {
     height: 2.5em;
     width: 2.5em;
     display: block;
-    fill: black;
+    fill: rgb(255, 255, 255);
     transform: rotate(-90deg);
 }

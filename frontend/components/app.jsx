@@ -4,12 +4,14 @@ import Modal from './modal/modal';
 import { NavLink } from 'react-router-dom';
 
 const App = ({ children }) => (
-    <div>
+    <div className="home-page">
         <Modal />
-        <NavContainer />
-        <header>
-
-        </header>
+        <div className="full">
+            <NavContainer />
+            <div className="home-searchbar">
+                <input type="text" placeholder="Try 'Homes in Seoul'"/>
+            </div>
+        </div>
     </div>
 );
 
