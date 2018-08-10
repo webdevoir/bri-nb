@@ -1,0 +1,102 @@
+.login-form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login-input {
+    margin-left: 20px;
+}
+
+.login-form-box {
+    outline: 1px solid black;
+    padding: 20px;
+    width: 568px;
+    height: 783px;
+    background: white;
+    position: relative;
+}
+
+.close-x {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.close-x svg {
+    height: 16px;
+    width: 16px; 
+    display: block; 
+    fill: rgb(118, 118, 118);
+}
+
+.login-form-container button {
+    cursor: pointer;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    font-weight: 800 !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    min-width: 77.6656px !important;
+    box-shadow: none !important;
+    color: rgb(255, 255, 255) !important;
+    margin: 0px !important;
+    text-decoration: none !important;
+    border-radius: 4px !important;
+    border-width: 2px !important;
+    border-style: solid !important;
+    background: rgb(255, 90, 95) !important;
+    border-color: transparent !important;
+    box-sizing: border-box;
+}
+
+input {
+    font-size: 16px !important;
+    line-height: 22px !important;
+    letter-spacing: normal !important;
+    font-family: Circular,
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    "Helvetica Neue",
+    sans-serif !important;
+    color: rgb(72, 72, 72) !important;
+    font-weight: normal !important;
+    background-color: transparent !important;
+    width: 100% !important;
+    border: 1px solid rgb(231, 231, 231);
+    padding: 11px !important;
+    display: block;
+    border-radius: 2px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.line-container {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.line {
+    border-bottom: 1px solid rgb(235, 235, 235) !important;
+    display: block;
+}
+
+.redirect {
+    text-align: center;
+}
+
+.login-form-container a {
+    cursor: pointer;
+    color: rgb(0, 132, 137) !important;
+    text-align: left !important;
+    font: inherit inherit inherit inherit inherit inherit inherit inherit inherit !important;
+    font-weight: 500;
+    text-decoration: none !important;
+}

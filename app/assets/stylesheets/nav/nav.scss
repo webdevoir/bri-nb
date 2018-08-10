@@ -1,0 +1,54 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    font-family: Circular,
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+    font-size: 100%;
+    line-height: 1.43;
+}
+
+.navbar ul {
+    display: table;
+    height: 64px !important;
+    list-style: none !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.navbar li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    margin-left: 24px;
+    height: 80px;
+    line-height: 80px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.navbar li:hover {
+    border-bottom: 1px solid black;
+}
+
+.navbar li button {
+    border: none;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.navbar li:last-child {
+    margin-right: 20px;
+}
+
+svg {
+    padding: 20px;
+    height: 2.5em;
+    width: 2.5em;
+    display: block;
+    fill: black;
+    transform: rotate(-90deg);
+}
