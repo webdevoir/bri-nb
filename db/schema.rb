@@ -10,10 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_07_185740) do
+ActiveRecord::Schema.define(version: 2018_08_13_035907) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "homes", force: :cascade do |t|
+    t.integer "host_id", null: false
+    t.string "name", null: false
+    t.string "city", null: false
+    t.integer "max_guests", null: false
+    t.integer "num_rooms", null: false
+    t.integer "num_beds", null: false
+    t.integer "num_baths", null: false
+    t.text "description", null: false
+    t.text "house_rules"
+    t.text "cancellation_policy", null: false
+    t.float "latitude", null: false
+    t.float "longitude", null: false
+    t.float "price", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["host_id"], name: "index_homes_on_host_id"
+    t.index ["name"], name: "index_homes_on_name"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", null: false

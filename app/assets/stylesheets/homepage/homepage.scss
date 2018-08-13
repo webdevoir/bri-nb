@@ -33,6 +33,7 @@
 .search-container input::placeholder {
     font-size: 1em;
     font-weight: 700;
+    color: rgb(153, 153, 153)
 }
 
 .search-container input {
@@ -56,4 +57,8 @@
     box-sizing: border-box;
     margin: auto;
     background-color: white;
+}
+
+.search-container input:focus {
+    outline-width: 0;
 }

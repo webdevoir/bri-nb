@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import Root from './components/root';
 import configureStore from './store/store';
+import { fetchHomes } from './actions/home_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
     const root = document.getElementById('root');
@@ -25,6 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         store = configureStore();
     }
+
+    window.dispatch = store.dispatch;
+    window.getState = store.dispatch;
+    window.fetchHomes = fetchHomes;
     
     ReactDOM.render(<Root store={ store }/>, root);
 });
