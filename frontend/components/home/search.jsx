@@ -7,13 +7,12 @@ class Search extends React.Component {
         super(props);
     }
 
-    // componentDidMount() {
-    //     this.props.fetchHomes();
-    // }
+    componentDidMount() {
+        this.props.fetchHomes();
+    }
 
     render() {
-        console.log("I guess this should run twice?");
-        let { homes, center, updateFilter } = this.props;
+        let { homes, center, updateFilter, fetchHomes} = this.props;
         return (
             <div className="user-pane">
                 <div className="left-half">
@@ -22,13 +21,12 @@ class Search extends React.Component {
                     />
                 </div>
                 <div className="right-half" >
-                    {homes && 
                     <Map
                         homes={homes}
                         center={center}
                         updateFilter={updateFilter}
+                        fetchHomes={fetchHomes}
                     />
-                    }
                 </div>
             </div>
         );

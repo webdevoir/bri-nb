@@ -11,6 +11,7 @@ class Map extends React.Component {
     }
 
     componentDidMount() {
+        this.props.show == "true" ? this.props.fetchHome(this.props.homeId) : this.props.fetchHomes();
         const map = ReactDOM.findDOMNode(this.refs.map);
 
         const options = {
@@ -23,7 +24,11 @@ class Map extends React.Component {
         this.MarkerManager.updateMarkers(this.props.homes);
         this.listenForMove();
 
-        // this.props.homes.forEach(home => this.addHome(home));
+        if(this.props.show == "true") {
+            Object.values(this.props.homes).forEach(home=> this.addHome(home));
+        } else {
+            this.props.homes.forEach(home => this.addHome(home));
+        }
     }
 
     componentWillReceiveProps() {
@@ -50,7 +55,10 @@ class Map extends React.Component {
     listenForMove() {
         google.maps.event.addListener(this.map, 'idle', () => {
             const bounds = this.map.getBounds();
-            this.props.updateFilter("bounds", bounds);
+
+            if(this.props.show != "true"){
+                this.props.updateFilter("bounds", bounds);
+            }
 
             console.log('center',
                 bounds.getCenter().lat(),
@@ -68,7 +76,7 @@ class Map extends React.Component {
         return (
             <div>
                 <div ref="map" id='map-container' ref="map"/>
-                </div>
+            </div>
         );
     }
 }

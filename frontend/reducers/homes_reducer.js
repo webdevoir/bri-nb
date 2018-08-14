@@ -5,7 +5,6 @@ import { RECEIVE_HOMES, RECEIVE_HOME } from '../actions/home_actions';
 const homesReducer = (state = {}, action) => {
     Object.freeze(state);
     let newState = merge({}, state);
-
     switch (action.type) {
         case RECEIVE_HOMES:
             return action.homes;

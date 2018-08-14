@@ -8,7 +8,17 @@ export const receiveHomes = (homes) => ({
     homes
 });
 
+export const receiveHome = ({ home }) => ({
+    type: RECEIVE_HOME,
+    home
+});
+
 export const fetchHomes = () => dispatch => (
-    HomeApiUtil.fetchHomes()
-    .then(homes => dispatch(receiveHomes(homes)))
+    HomeApiUtil.fetchHomes().then(homes => dispatch(receiveHomes(homes)))
+);
+
+export const fetchHome = (id) => dispatch => (
+    HomeApiUtil.fetchHome(id).then(payload => (
+        dispatch(receiveHome(payload))
+    ))
 );
