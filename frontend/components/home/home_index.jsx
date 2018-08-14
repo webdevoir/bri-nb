@@ -4,15 +4,18 @@ import HomeIndexItem from './home_index_item';
 class HomeIndex extends React.Component {
 
     render() {
+        let { homes } = this.props;
         return (
             <div>
-                <h1>Homes: </h1>
-                {this.props.homes.map(home => (
-                    <HomeIndexItem
-                        home={home}
-                        key={home.id}
-                    />
-                ))}
+                <h1 className="home-number"> {homes.length} homes </h1>
+                <ul className="home-index-container">
+                    {homes.map(home => (
+                        <HomeIndexItem
+                            key={home.id}
+                            home={home}
+                        />
+                    ))}
+                </ul>
             </div>
         );
     }

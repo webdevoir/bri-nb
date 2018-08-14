@@ -15,13 +15,15 @@ class Homepage extends React.Component {
 
 
         return (
-            <div className="home-searchbar">
-                <div className="search-slogan">
-                    <h1>Book unique homes and</h1>
-                    <h1>experiences all over the world.</h1>
-                </div>
-                <div className="search-container">
-                    <input type="text" placeholder="Try 'Homes in Tokyo'" />
+            <div className="-page">
+                <div className="home-searchbar">
+                    <div className="search-slogan">
+                        <h1>Book unique homes and</h1>
+                        <h1>experiences all over the world.</h1>
+                    </div>
+                    <div className="search-container">
+                        <input type="text" placeholder="Try 'Homes in Tokyo'" />
+                    </div>
                 </div>
             </div>
         );

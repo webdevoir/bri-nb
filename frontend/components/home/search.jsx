@@ -1,6 +1,4 @@
 import React from 'react';
-
-// import FilterForm from './filter_form';
 import HomeIndex from './home_index';
 import Map from './map';
 
@@ -9,24 +7,28 @@ class Search extends React.Component {
         super(props);
     }
 
-    render(){
+    // componentDidMount() {
+    //     this.props.fetchHomes();
+    // }
 
-        let { homes } = this.props;
-        console.log(this.props.homes);
-        
+    render() {
+        console.log("I guess this should run twice?");
+        let { homes, center, updateFilter } = this.props;
         return (
             <div className="user-pane">
-                <div className="left-half" >
-                    <h5 > Click Map to Add Home! </h5>
-                    <Map
-                        homes={homes}
-                        center={{ lat: 37.7758, lng: -122.435 }}
-                    // updateFilter={updateFilter}
+                <div className="left-half">
+                    <HomeIndex 
+                        homes={homes} 
                     />
                 </div>
-                <div className="right-half">
-                    {/* <FilterForm updateFilter={updateFilter} /> */}
-                    <HomeIndex homes={homes} />
+                <div className="right-half" >
+                    {homes && 
+                    <Map
+                        homes={homes}
+                        center={center}
+                        updateFilter={updateFilter}
+                    />
+                    }
                 </div>
             </div>
         );

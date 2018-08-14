@@ -29,7 +29,7 @@ m1 = Home.create(
     price: 70.00
 )
 
-m1 = Home.create(
+m2 = Home.create(
     host_id: u2.id,
     name: "AVA Nob Hill",
     city: "San Francisco",
@@ -45,7 +45,7 @@ m1 = Home.create(
     price: 70.00
 )
 
-m1 = Home.create(
+m3 = Home.create(
     host_id: u3.id,
     name: "Burma Love",
     city: "San Francisco",
@@ -59,4 +59,20 @@ m1 = Home.create(
     latitude: 37.76962,
     longitude: -122.42205,
     price: 70.00
+)
+
+m4 = Home.create(
+    host_id: u4.id,
+    name: "Studio with Awesome View",
+    city: "San Francisco",
+    max_guests: 6,
+    num_rooms: 3,
+    num_beds: 3,
+    num_baths: 4,
+    description: "An awesome place to vacation",
+    house_rules: "No smoking please",
+    cancellation_policy: "Full refund within 24 hours of booking",
+    latitude: 37.807175,
+    longitude: -122.42017,
+    price: 100.00
 )

@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { withRouter } from 'react-router-dom';
 import MarkerManager from '../../util/marker_manger';
 
-// just a normal react component class :)
 class Map extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {};
         this.addHome = this.addHome.bind(this);
     }
 
@@ -19,14 +20,22 @@ class Map extends React.Component {
 
         this.map = new google.maps.Map(map, options);
         this.MarkerManager = new MarkerManager(this.map);
+        this.MarkerManager.updateMarkers(this.props.homes);
         this.listenForMove();
 
-        this.props.homes.forEach(home => this.addHome(home));
-        console.log(this.props.homes);
+        // this.props.homes.forEach(home => this.addHome(home));
+    }
+
+    componentWillReceiveProps() {
+        this.props.homes.forEach(this.addHome);
+    }
+
+    componentDidUpdate() {
+        this.MarkerManager.updateMarkers(this.props.homes);
     }
 
     addHome(home) {
-        const pos = new google.maps.latlng(home.latitude, home.longitude);
+        const pos = new google.maps.LatLng(home.latitude, home.longitude);
 
         const marker = new google.maps.Marker({
             position: pos,
@@ -41,7 +50,7 @@ class Map extends React.Component {
     listenForMove() {
         google.maps.event.addListener(this.map, 'idle', () => {
             const bounds = this.map.getBounds();
-            alert('map has moved, check console to see updated bounds');
+            this.props.updateFilter("bounds", bounds);
 
             console.log('center',
                 bounds.getCenter().lat(),
@@ -58,11 +67,10 @@ class Map extends React.Component {
     render() {
         return (
             <div>
-                <span>MAP DEMO</span>
                 <div ref="map" id='map-container' ref="map"/>
                 </div>
         );
     }
 }
 
-export default Map;
+export default withRouter(Map);
