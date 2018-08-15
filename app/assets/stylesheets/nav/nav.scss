@@ -1,57 +1,129 @@
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    font-family: Circular,
-    "Helvetica Neue",
-    Helvetica,
-    Arial,
-    sans-serif;
-    font-size: 14px;
-    line-height: 1.43;
+.home {    
+    height:100vh;
+    width:100%;
+    overflow:hidden;
+    background-image: url(https://s15.postimg.cc/7rjm06sop/architecture-buildings-city-842948-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(20%);
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        font-family: Circular,
+        "Helvetica Neue",
+        Helvetica,
+        Arial,
+        sans-serif;
+        font-size: 14px;
+        line-height: 1.43;
+    }
+
+    .navbar ul {
+        display: table;
+        height: 64px !important;
+        list-style: none !important;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .navbar li {
+        list-style: none;
+        display: inline-block;
+        text-align: center;
+        margin-left: 19px;
+        height: 80px;
+        line-height: 80px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    .navbar li:hover {
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+
+    .navbar li button {
+        border: none;
+        text-align: center;
+        cursor: pointer;
+        background-color: transparent;
+        color: white;
+        font-weight: 500;
+
+    }
+
+    .navbar li:last-child {
+        margin-right: 20px;
+    }
+
+    svg {
+        padding: 20px;
+        height: 2.5em;
+        width: 2.5em;
+        display: block;
+        fill: rgb(255, 255, 255);
+        transform: rotate(-90deg);
+    }
 }
 
-.navbar ul {
-    display: table;
-    height: 64px !important;
-    list-style: none !important;
-    padding: 0px !important;
-    margin: 0px !important;
-}
+.search, .show {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(20%);
 
-.navbar li {
-    list-style: none;
-    display: inline-block;
-    text-align: center;
-    margin-left: 19px;
-    height: 80px;
-    line-height: 80px;
-    box-sizing: border-box;
-    cursor: pointer;
-}
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.43;
+    }
 
-.navbar li:hover {
-    border-bottom: 2px solid rgb(255, 255, 255);
-}
+    .navbar ul {
+        display: table;
+        height: 64px !important;
+        list-style: none !important;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
 
-.navbar li button {
-    border: none;
-    text-align: center;
-    cursor: pointer;
-    background-color: transparent;
-    color: white;
-    font-weight: 500;
+    .navbar li {
+        list-style: none;
+        display: inline-block;
+        text-align: center;
+        margin-left: 19px;
+        height: 80px;
+        line-height: 80px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
 
-}
+    .navbar li:hover {
+        border-bottom: 2px solid rgb(0, 0, 0);
+    }
 
-.navbar li:last-child {
-    margin-right: 20px;
-}
+    .navbar li button {
+        border: none;
+        text-align: center;
+        cursor: pointer;
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+        font-weight: 500;
+    }
 
-svg {
-    padding: 20px;
-    height: 2.5em;
-    width: 2.5em;
-    display: block;
-    fill: rgb(255, 255, 255);
-    transform: rotate(-90deg);
+    .navbar li:last-child {
+        margin-right: 20px;
+    }
+
+    svg {
+        padding: 20px;
+        height: 2.5em;
+        width: 2.5em;
+        display: block;
+        fill: #FF5A5F !important;
+        transform: rotate(-90deg);
+    }
 }

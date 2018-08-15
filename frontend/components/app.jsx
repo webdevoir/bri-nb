@@ -8,18 +8,39 @@ import SearchContainer from './home/search_container';
 import HomeShowContainer from './home/home_show_container';
 import Modal from './modal/modal';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
+import HomeShow from './home/home_show';
+
+const Home = ({ children }) => (
+    <div className="home">
+        <NavContainer/>
+        <HomepageContainer/>
+    </div>
+);
+
+const Search = ({ children }) => (
+    <div className="search">
+        <NavContainer />
+        <SearchContainer />
+    </div>
+);
+
+const Show = (ownProps) => (
+    <div className="show">
+        <NavContainer />
+        <HomeShowContainer ownProps={ownProps} />
+    </div>
+);
 
 const App = ({ children }) => (
     <div className="home-page">
         <Modal />
         <div>
-            <NavContainer />
             <Switch>
                 <AuthRoute exact path="/login" component={LoginFormContainer} />
                 <AuthRoute exact path="/signup" component={SignupFormContainer} />
-                <Route exact path="/search" component={SearchContainer} />
-                <Route path="/homes/:homeId" component={HomeShowContainer}/>
-                <Route path="/" component={HomepageContainer} />
+                <Route exact path="/search" component={Search} />
+                <Route exact path="/homes/:homeId" component={Show}/>
+                <Route path="/" component={Home} />
             </Switch>
         </div>
     </div>

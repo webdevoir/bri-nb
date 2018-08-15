@@ -65,17 +65,47 @@
 .home-show-content {
     width: 100%;
     display: flex;
-    border: 1px solid red;
+    color: rgb(72, 72, 72) !important;
 
     .home-show-left {
-        width: 60%;
-        border: 1px solid black;
+        display: flex;
+        justify-content: flex-end;
+        width: 55%;
+
+        .home-show-details {
+            width: 65%;
+
+            .home-show-title {
+                font-size: 28px;
+                font-weight: 600;
+                padding-bottom: 10px;
+            }
+
+            .home-show-info {
+                display: flex;
+
+                div {
+                    padding: 14px 8px 20px 0;
+                }
+
+                span {
+                    padding: 0 6px 0 0;
+                }
+            }
+
+            .home-show-description {
+
+            }
+        }
     }
 
     .home-show-right {
-        width: 40%;
+        width: 45%;
         height: 50vh;
-        border: 1px solid black;
+    }
+
+    div {
+        border: 1px solid green;
     }
 }
 

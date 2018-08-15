@@ -17,13 +17,39 @@
 
         return (
             <div>
-                <div> HELLOOOO</div>
                 <div className="big-photo">
-                    The big photo will go here
                 </div>
                 <div className="home-show-content">
                     <div className="home-show-left">
-                        This is the left side of the show page
+                        <div className="home-show-details">
+                            <div className="home-show-title">
+                                {home.name}
+                            </div>
+                            <div className="home-show-city">
+                                {home.city}
+                            </div>
+                            <div className="home-show-info">
+                                <div>
+                                    <span><i className="fas fa-users fa-xs"></i></span>
+                                    <span> {home.max_guests} guests</span>
+                                </div>
+                                <div>
+                                    <span><i className="fas fa-door-open fa-xs"></i></span>
+                                    <span>{home.num_rooms} rooms</span>
+                                </div>
+                                <div>
+                                    <span><i className="fas fa-bed fa-xs"></i></span>
+                                    <span>{home.num_beds} beds</span>
+                                </div>
+                                <div>
+                                    <span><i className="fas fa-bath fa-xs"></i></span>
+                                    <span>{home.num_baths} baths</span>
+                                </div>
+                            </div>
+                            <div className="home-show-description">
+                                {home.description}
+                            </div>
+                        </div>
                     </div>
                     <div className="home-show-right">
                         This is the right side of the show page
