@@ -1,5 +1,6 @@
 import React from 'react';
 import HomeIndexItem from './home_index_item';
+import { withRouter } from 'react-router';
 
 class HomeIndex extends React.Component {
 
@@ -21,4 +22,4 @@ class HomeIndex extends React.Component {
     }
 }
 
-export default HomeIndex;
+export default withRouter(HomeIndex);
