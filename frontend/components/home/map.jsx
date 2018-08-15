@@ -24,11 +24,8 @@ class Map extends React.Component {
         this.MarkerManager.updateMarkers(this.props.homes);
         this.listenForMove();
 
-        if(this.props.show == "true") {
-            Object.values(this.props.homes).forEach(home=> this.addHome(home));
-        } else {
-            this.props.homes.forEach(home => this.addHome(home));
-        }
+        this.props.homes.forEach(home => this.addHome(home));
+
     }
 
     componentWillReceiveProps() {
@@ -73,6 +70,7 @@ class Map extends React.Component {
     }
 
     render() {
+        if (!this.props.homes.length > 1) return null;
         return (
             <div>
                 <div ref="map" id='map-container' ref="map"/>
