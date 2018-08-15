@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 #Seed Users
+demo = User.create(email: "demo@demo.com", password: "123123", first_name: "Demo", last_name: "User")
 u1 = User.create(email: "brianjeong55@gmail.com", password: "123123", first_name: "Brian", last_name: "Jeong")
 u2 = User.create(email: "angjeong@gmail.com", password: "123123", first_name: "Angelina", last_name: "Jeong")
 u3 = User.create(email: "tsj11@gmail.com", password: "123123", first_name: "Terry", last_name: "Jeong")

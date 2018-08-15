@@ -12,6 +12,8 @@ class Search extends React.Component {
     }
 
     render() {
+        if(this.props.homes === null) return (<div>Loading...</div>);
+        
         let { homes, center, updateFilter, fetchHomes} = this.props;
         return (
             <div className="user-pane">

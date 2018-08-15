@@ -16,6 +16,11 @@ function Modal({ modal }) {
         case 'signup':
             component = <SignupFormContainer />;
             break;
+        case 'demo':
+            component = <LoginFormContainer 
+                demo={ {email: 'demo@demo.com', password: '123123'} }
+            />;
+            break;
         default:
             return null;
     }

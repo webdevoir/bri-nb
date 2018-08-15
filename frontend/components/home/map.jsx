@@ -11,7 +11,7 @@ class Map extends React.Component {
     }
 
     componentDidMount() {
-        this.props.show == "true" ? this.props.fetchHome(this.props.homeId) : this.props.fetchHomes();
+        // this.props.show == "true" ? this.props.fetchHome(this.props.homeId) : this.props.fetchHomes();
         const map = ReactDOM.findDOMNode(this.refs.map);
 
         const options = {
@@ -24,7 +24,7 @@ class Map extends React.Component {
         this.MarkerManager.updateMarkers(this.props.homes);
         this.listenForMove();
 
-        this.props.homes.forEach(home => this.addHome(home));
+        // this.props.homes.forEach(home => this.addHome(home));
 
     }
 
