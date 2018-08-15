@@ -9,7 +9,7 @@ class Nav extends React.Component {
         const { openModal, currentUser, logout, login } = this.props;
 
         const sessionLinks = () => (
-            <header>
+            <header className="nav-container">
                 <nav className="navbar">
                     <div className="left-nav">
                         <a href="">

@@ -77,3 +77,51 @@ m4 = Home.create(
     longitude: -122.42017,
     price: 100.00
 )
+
+m5 = Home.create(
+    host_id: u1.id,
+    name: "Spacious condo in Noe Valley",
+    city: "San Francisco",
+    max_guests: 4,
+    num_rooms: 2,
+    num_beds: 3,
+    num_baths: 4,
+    description: "An awesome place to vacation",
+    house_rules: "No smoking please",
+    cancellation_policy: "Full refund within 24 hours of booking",
+    latitude: 37.751677,
+    longitude: -122.432468,
+    price: 120.00
+)
+
+m6 = Home.create(
+    host_id: u2.id,
+    name: "Shady, Dangerous Patio in SoMa",
+    city: "San Francisco",
+    max_guests: 6,
+    num_rooms: 3,
+    num_beds: 3,
+    num_baths: 4,
+    description: "An awesome place to vacation",
+    house_rules: "No smoking please",
+    cancellation_policy: "Full refund within 24 hours of booking",
+    latitude: 37.779879,
+    longitude: -122.405480,
+    price: 20.00
+)
+
+m7 = Home.create(
+    host_id: u3.id,
+    name: "Packed, Touristy Apartment in Russian Hill",
+    city: "San Francisco",
+    max_guests: 6,
+    num_rooms: 3,
+    num_beds: 3,
+    num_baths: 4,
+    description: "An awesome place to vacation",
+    house_rules: "No smoking please",
+    cancellation_policy: "Full refund within 24 hours of booking",
+    latitude: 37.801911,
+    longitude: -122.418704,
+    price: 100.00
+)

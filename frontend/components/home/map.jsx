@@ -24,7 +24,7 @@ class Map extends React.Component {
         this.MarkerManager.updateMarkers(this.props.homes);
         this.listenForMove();
 
-        // this.props.homes.forEach(home => this.addHome(home));
+        this.props.homes.forEach(home => this.addHome(home));
 
     }
 
@@ -45,7 +45,7 @@ class Map extends React.Component {
         });
 
         marker.addListener('click', () => {
-            alert(`clicked on: ${home.name}`);
+            this.props.history.push(`/homes/${home.id}`);
         });
     }
 
