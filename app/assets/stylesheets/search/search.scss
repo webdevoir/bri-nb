@@ -5,12 +5,12 @@
 
 .user-pane {
     display: flex;
-
+    padding: 13px;
 }
 
 .left-half {
     width: 66%;
-    margin: 0 0 0 10px;
+    // margin: 0 0 0 10px;
 }
 
 .right-half {
@@ -18,20 +18,23 @@
 }
 
 .home-number {
-    font-size: 22px;
+    font-size: 24px;
     color: rgb(72, 72, 72) !important;
     font-weight: 600;
+    padding-left: 12px;
+    padding-bottom: 15px;
 }
 
 .home-index-item {
-    width: 30%;
+    width: 31%;
     height: 35vh;
     margin: 10px;
     background-color: white;
 }
 
 .home-index-container {
-    display:flex;
+    display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
 
 }
@@ -54,6 +57,32 @@
 
     div {
         margin-bottom: 5px;
+        margin-top: 8px;
+    }
+
+    .home-index-rooms {
+        color: rgb(52, 30, 19);
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 16px !important;
+        letter-spacing: normal !important;
+    }
+
+    .home-index-name {
+        font-size: 16px !important;
+        line-height: 22px !important;
+        letter-spacing: normal !important;
+        font-weight: 800 !important;
+    }
+
+    .home-index-price {
+        font-size: 14px !important;
+        line-height: 18px !important;
+        letter-spacing: normal !important;
+    }
+
+    .stars {
+        font-size: 10px;
     }
 }
 

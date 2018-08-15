@@ -1,5 +1,4 @@
 import React from 'react';
-// import { login } from '../../actions/session_actions';
 
 class Nav extends React.Component {
     constructor(props) {
@@ -20,27 +19,53 @@ class Nav extends React.Component {
                             </svg>
                         </a>
                     </div>
+                    <div className="nav-search-bar">
+                        <div className="inner1">
+                            <div className="inner2">
+                                <div className="inner3">
+                                    <div className="inner4">
+                                        <form className="nav-form">
+                                            <div className="inner5">
+                                                <div className="inner6">
+                                                    <div className="inner7">
+                                                        {/* <div className="magnify-glass">
+                                                            <i className="fas fa-search"></i>
+                                                        </div> */}
+                                                        <div className="input-container">
+                                                            <input type="text" autoComplete="off" name="query" placeholder="Anywhere" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className="right-nav">
-                        <ul>
-                            <li>
-                                <button>Become a host</button>
-                            </li>
-                            <li>
-                                <button>Earn credit</button>
-                            </li>
-                            <li>
-                                <button>Help</button>
-                            </li>
-                            <li onClick={() => openModal('signup')}>
-                                <button>Sign up</button>
-                            </li>
-                            <li onClick={() => openModal('login')}>
-                                <button>Log in</button>
-                            </li>
-                            <li onClick={() => login( {email: "demo@demo.com", password: "123123"} )}>
-                                <button>Demo User</button>
-                            </li>
-                        </ul>
+                        <div className="nav-link-container">
+                            <ul>
+                                <li>
+                                    <button>Become a host</button>
+                                </li>
+                                <li>
+                                    <button>Earn credit</button>
+                                </li>
+                                <li>
+                                    <button>Help</button>
+                                </li>
+                                <li onClick={() => openModal('signup')}>
+                                    <button>Sign up</button>
+                                </li>
+                                <li onClick={() => openModal('login')}>
+                                    <button>Log in</button>
+                                </li>
+                                <li onClick={() => login({ email: "demo@demo.com", password: "123123" })}>
+                                    <button>Demo User</button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
             </header>
@@ -57,21 +82,45 @@ class Nav extends React.Component {
                             </svg>
                         </a>
                     </div>
+                    <div className="nav-search-bar">
+                        <div className="inner1">
+                            <div className="inner2">
+                                <div className="inner3">
+                                    <div className="inner4">
+                                        <form className="nav-form">
+                                            <div className="inner5">
+                                                <div className="inner6">
+                                                    <div className="magnify-glass">
+
+                                                    </div>
+                                                    <div className="input-container">
+                                                        <input type="text" autoComplete="off" name="query" placeholder="Anywhere" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className="right-nav">
-                        <ul>
-                            <li>
-                                <button>Become a host</button>
-                            </li>
-                            <li>
-                                <button>Earn credit</button>
-                            </li>
-                            <li>
-                                <button>Help</button>
-                            </li>
-                            <li onClick={() => logout()}>
-                                <button className="header-button">Log Out</button>
-                            </li>
-                        </ul>
+                        <div className="nav-link-container">
+                            <ul>
+                                <li>
+                                    <button>Become a host</button>
+                                </li>
+                                <li>
+                                    <button>Earn credit</button>
+                                </li>
+                                <li>
+                                    <button>Help</button>
+                                </li>
+                                <li onClick={() => logout()}>
+                                    <button className="header-button">Log Out</button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
             </header>
