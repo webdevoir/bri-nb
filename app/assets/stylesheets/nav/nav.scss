@@ -78,6 +78,7 @@
     background-position: center;
     filter: grayscale(20%);
 
+
     .nav-container {
         top: -100px;
         left: 0;
@@ -89,6 +90,7 @@
         display: table;
         justify-content: space-between;
         font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: rgb(72, 72, 72) !important;
         font-size: 14px;
         line-height: 1.43;
         border-bottom: 1px solid rgb(230, 230, 230);
@@ -228,7 +230,7 @@
     }
 
     .navbar li:hover {
-        border-bottom: 2px solid rgb(0, 0, 0);
+        border-bottom: 2px solid rgb(72, 72, 72);
     }
 
     .navbar li button {
@@ -236,7 +238,7 @@
         text-align: center;
         cursor: pointer;
         background-color: transparent;
-        color: rgb(0, 0, 0);
+        color: rgb(72, 72, 72) !important;
         font-weight: 500;
     }
 

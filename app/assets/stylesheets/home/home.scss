@@ -1,0 +1,129 @@
+.big-photo {
+    width: 100%;
+    height: 72vh;
+    text-align: center;
+    background-image: url(https://lh3.googleusercontent.com/aLzsmKAwprN-vSMJ0rc4m9Nbu_BrPWcn-2m4gMVrgFt5F4kEPpOWWnrbOhhPb03e3AyZqZAdZRuQbhxjuFmLM5-5cnV3hRvIVmGg7fVJCuw9gZ-fos_dD4AJ7PWxWLbHekacCLHkaJ1JKMiDehggRAkklyo50A64v4o4be0LL8IeqICSgVCfkXP__R-Ziuv0taHLoGzbDk0y3MfDYoc_swJE0eqh5gpYrNUdOy5bn6rawA5_yyYi3K7GnFOT8o6Sil9tWD7URzDHeQUvvH2mNepxoSCzcV1LK_eSaybMxURREjeKnRQQbthth2ouFWDfJrWsaHRMkHURuiLJ_zrrptSLDsvXRtgF4fuBGSi5M6YYWvGrWLSP0QpIZG-EIhISCl8w1k84oJHmnOe74wbW92w1TY_VpK9_PmLis3IX9kgyJY6ppffW9IyIrzyJAtd2k36yZhMkCaUZWu_aUhzKHoYiKgjuzlpT8rDR1QnQoKMoysuTt0rvAs2xqmVM0wXjV9elTNtg4nRkTtjZRDVXeBzG2cvMRCvqvq9tOnzQ-Tyu4OdSzE9IfjVR_vYnHjK-kXQoriezvX__F1R2-s-mUykG_tARf6-LQnzd-D1c=w2901-h1813-no);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-show-content {
+    width: 100%;
+    display: flex;
+    color: rgb(72, 72, 72) !important;
+    padding: 25px 0 0 0;
+    .home-show-left {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        width: 55%;
+        // padding: 0 20px 0 0;
+
+        .home-show-details {
+            display: block;
+            width: 65%;
+
+            .quick-info {
+                display: flex;
+
+                .name-city-left {
+                    width: 85%;
+                }
+
+                .host-photo-container {
+                    width: 15%;
+                    display: flex;
+                    justify-content: flex-end;
+                    padding: 7px 5px 0 0;
+
+                    .host-photo {
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        background-image: url(https://lh3.googleusercontent.com/9PdC63eGKjJ0L6qr1qQzvglwxHF8buR9dRerfm3bmsKSsuSmtHEYoKI3L0acYW6JTVshVM00z8iFbGsKp986_kfFfJVil4t3qqacx4Vdo10ACQW8D8DdYev6vNZM-HZIzBppCEcxPfSOWaclkAkgqMWlP3JrX2M9S8pxMCoWZxZL6IqKMn5HAEqpyOURBKxuTZT7YtTRNnTbx8owxEmC0gKA0Cx1kW9hDO1JhKJd65OqTXtHw56Ah8TzSinE1MNX6MrIiO2UrpvmJq-yN9sZVspQFWk_HsW2P-tC8LQ7gnFhIkSqGWeJy7wiqnX6NWbs7IHJYmvvWWeVMLXzZZEgfzHEbTMVknfNtCIao8CWge4N11HkrVuyIi3_6sK9pJBNLXTiD-GxTXEyjAcy0BKwFxVI2HW-pa5UYV63X5_ke_yyqi1rxHY8-tu9L3HsXPq6yMphog-Xgn9nBPI5b9jjFVxY5ff28oSsBwjQG6Ra6EgFVoHhx_hhTptLKDF1iLtsDyhNgoaVZU6e13Q0HUpITh48fVemXP8HeXVp9uKvotgkFBziYVEN5B4FQHctz9MNBCT50Q2puX7g1Koh1evrB5ByjobSbiQUx26EpaKB=s883-no);
+                    }
+                }
+            }
+            .home-show-title {
+                font-size: 30px;
+                font-weight: 600;
+                padding-bottom: 8px;
+            }
+            .home-show-info {
+                display: flex;
+                div {
+                    padding: 14px 8px 20px 0;
+                }
+                span {
+                    padding: 0 6px 0 0;
+                }
+            }
+            .home-show-description {}
+        }
+        .home-show-map {
+            display: block;
+            width: 65%;
+            #map-container {
+                display: flex;
+                width: 100%;
+                height: 40vh;
+            }
+
+            div {
+                border: none;
+            }
+        }
+    }
+    .home-show-right {
+        width: 45%;
+        // margin: 0 0 0 80px;
+        height: 50vh;
+
+        .reservation-container {
+            width: 50%;
+            height: 40vh;
+            border: 1px solid rgb(207, 207, 207);
+            margin: 0 0 0 54px;
+
+            .price-container {
+                padding: 22px;
+                border-bottom: 1px solid rgb(207, 207, 207);
+                .price {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-end;
+                    padding: 0 0 8px 0;
+
+                    .value {
+                        font-size: 20px;
+                        font-weight: 800;
+                    }
+
+                    .word {
+                        font-size: 11px;
+                        font-weight: 500;
+                        vertical-align: bottom;
+                    }
+                }
+
+                .stars {
+                    display: flex;
+                    justify-content: flex-start;
+                    font-size: 9px;
+                    color: rgb(27, 139, 139); 
+
+                    .review-count {
+                        color: rgb(72, 72, 72);
+                    }
+                }
+            }
+        }
+    }
+    div {
+        // border: 1px solid green;
+    }
+}

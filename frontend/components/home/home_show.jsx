@@ -23,11 +23,20 @@
                 <div className="home-show-content">
                     <div className="home-show-left">
                         <div className="home-show-details">
-                            <div className="home-show-title">
-                                {home.name}
-                            </div>
-                            <div className="home-show-city">
-                                {home.city}
+                            <div className="quick-info">
+                                <div className="name-city-left">
+                                    <div className="home-show-title">
+                                        {home.name}
+                                    </div>
+                                    <div className="home-show-city">
+                                        {home.city}
+                                    </div>
+                                </div>
+                                <div className="host-photo-container">
+                                    <div className="host-photo">
+                                    
+                                    </div>
+                                </div>
                             </div>
                             <div className="home-show-info">
                                 <div>
@@ -51,18 +60,41 @@
                                 {home.description}
                             </div>
                         </div>
+                        <div className="home-show-map">
+                            <Map
+                                show="true"
+                                homes={[home]}
+                                center={center}
+                                homeId={homeId}
+                                fetchHome={fetchHome}
+                            />
+                        </div>
                     </div>
                     <div className="home-show-right">
-                        This is the right side of the show page
+                        <div className="reservation-container">
+                            <div className="price-container">
+                                <div className="price">
+                                    <div className="value">
+                                        ${home.price}
+                                    </div>
+                                    <div className="word">
+                                        &nbsp; per night
+                                    </div>
+                                </div>
+                                <div className="stars">
+                                    <i className="fas fa-star fa-xs"></i>
+                                    <i className="fas fa-star fa-xs"></i>
+                                    <i className="fas fa-star fa-xs"></i>
+                                    <i className="fas fa-star fa-xs"></i>
+                                    <i className="fas fa-star fa-xs"></i>
+                                    <div className="review-count">
+                                        &nbsp; 217
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <Map
-                    show="true"
-                    homes={[home]}
-                    center={center}
-                    homeId={homeId}
-                    fetchHome={fetchHome}
-                />
             </div>
         );
     }

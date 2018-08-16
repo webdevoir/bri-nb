@@ -10,7 +10,7 @@
 
 .left-half {
     width: 66%;
-    height: 800px;
+    height: 100vh;
     overflow: scroll;
 }
 
@@ -49,6 +49,10 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 4px;
+
+    &:hover {
+        opacity: .8;
+    }
 }
 
 .home-index-details {
@@ -85,58 +89,6 @@
 
     .stars {
         font-size: 10px;
-    }
-}
-
-.big-photo {
-    width: 100%;
-    text-align: center;
-}
-
-.home-show-content {
-    width: 100%;
-    display: flex;
-    color: rgb(72, 72, 72) !important;
-
-    .home-show-left {
-        display: flex;
-        justify-content: flex-end;
-        width: 55%;
-
-        .home-show-details {
-            width: 65%;
-
-            .home-show-title {
-                font-size: 28px;
-                font-weight: 600;
-                padding-bottom: 10px;
-            }
-
-            .home-show-info {
-                display: flex;
-
-                div {
-                    padding: 14px 8px 20px 0;
-                }
-
-                span {
-                    padding: 0 6px 0 0;
-                }
-            }
-
-            .home-show-description {
-
-            }
-        }
-    }
-
-    .home-show-right {
-        width: 45%;
-        height: 50vh;
-    }
-
-    div {
-        border: 1px solid green;
     }
 }
 
