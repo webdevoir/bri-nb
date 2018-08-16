@@ -8,14 +8,22 @@ class Map extends React.Component {
         super(props);
         this.state = {};
         this.addHome = this.addHome.bind(this);
+        this.bounds = new google.maps.LatLngBounds();
     }
 
     componentDidMount() {
         // this.props.show == "true" ? this.props.fetchHome(this.props.homeId) : this.props.fetchHomes();
         const map = ReactDOM.findDOMNode(this.refs.map);
+        let center;
+
+        if(this.props.show === "true") {
+            let lat = this.props.homes[0].latitude;
+            let lng = this.props.homes[0].longitude;
+            center = { lat, lng};
+        }
 
         const options = {
-            center: this.props.center,
+            center: center ? center : this.props.center,
             zoom: 13
         };
 
@@ -25,7 +33,6 @@ class Map extends React.Component {
         this.listenForMove();
 
         this.props.homes.forEach(home => this.addHome(home));
-
     }
 
     componentWillReceiveProps() {
@@ -34,6 +41,7 @@ class Map extends React.Component {
 
     componentDidUpdate() {
         this.MarkerManager.updateMarkers(this.props.homes);
+
     }
 
     addHome(home) {
@@ -44,9 +52,12 @@ class Map extends React.Component {
             map: this.map
         });
 
+        this.bounds.extend(pos);
+
         marker.addListener('click', () => {
             this.props.history.push(`/homes/${home.id}`);
         });
+        this.map.panToBounds(this.bounds);
     }
 
     listenForMove() {
@@ -71,6 +82,7 @@ class Map extends React.Component {
 
     render() {
         if (!this.props.homes.length > 1) return null;
+
         return (
             <div>
                 <div ref="map" id='map-container' ref="map"/>

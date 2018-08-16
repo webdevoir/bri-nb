@@ -1,8 +1,29 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 
 class Nav extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            search_content: ""
+        };
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    componentDidMount() {
+        const input = document.getElementById('autocomplete');
+        const searchBox = new google.maps.places.SearchBox(input);
+        searchBox.addListener('places_changed', () => this.handleSubmit());
+    }
+
+    handleSubmit(e) {
+        this.props.history.push('/search');
+    }
+
+    update(field) {
+        return (e) => {
+            this.setState({ [field]: e.target.value });
+        };
     }
 
     render() {
@@ -32,7 +53,7 @@ class Nav extends React.Component {
                                                             <i className="fas fa-search"></i>
                                                         </div> */}
                                                         <div className="input-container">
-                                                            <input type="text" autoComplete="off" name="query" placeholder="Anywhere" />
+                                                            <input type="text" placeholder="Anywhere" onChange={this.update("search_content")} id="autocomplete"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -94,7 +115,7 @@ class Nav extends React.Component {
 
                                                     </div>
                                                     <div className="input-container">
-                                                        <input type="text" autoComplete="off" name="query" placeholder="Anywhere" />
+                                                        <input type="text" placeholder="Anywhere" onChange={this.update("search_content")} id="autocomplete" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -135,4 +156,4 @@ class Nav extends React.Component {
     }
 }
 
-export default Nav;
+export default withRouter(Nav);

@@ -10,11 +10,19 @@ class Homepage extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+    componentDidMount() {
+        const input = document.getElementById('autocomplete');
+        const searchBox = new google.maps.places.SearchBox(input);
+        searchBox.addListener('places_changed', () => this.handleSubmit());
+    }
+
     handleSubmit(e) {
-        e.preventDefault();
+        // e.preventDefault();
         this.props.history.push('/search');
         // this.props.search(this.state)
         //     .then(data => this.props.history.push(`/search/${data.id}`));
+        
+        // https://developers.google.com/maps/documentation/javascript/examples/places-searchbox
     }
 
     update(field) {
@@ -22,7 +30,6 @@ class Homepage extends React.Component {
             this.setState({ [field]: e.target.value });
         };
     }
-
     render() {
         return (
             <div className="-page">
@@ -37,6 +44,7 @@ class Homepage extends React.Component {
                                 type="text" 
                                 placeholder="Try 'Homes in Tokyo'" 
                                 onChange={this.update("search_content")}
+                                id="autocomplete"
                             />
                         </form>
                     </div>
