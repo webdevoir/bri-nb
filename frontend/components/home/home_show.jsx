@@ -57,7 +57,17 @@
                                 </div>
                             </div>
                             <div className="home-show-description">
-                                {home.description}
+                                <div className="text">
+                                    {home.description}
+                                </div>
+                                <div className="read-more">
+                                    <span>Read more about the space </span>
+                                    &nbsp;
+                                    <i className="fas fa-angle-down"></i>
+                                </div>
+                                <div className="contact-host">
+                                    <span>Contact host</span>
+                                </div>
                             </div>
                         </div>
                         <div className="home-show-map">

@@ -55,14 +55,32 @@
             }
             .home-show-info {
                 display: flex;
+                padding: 0 0 0 0;
                 div {
-                    padding: 14px 8px 20px 0;
+                    padding: 10px 8px 20px 0;
                 }
                 span {
                     padding: 0 6px 0 0;
                 }
             }
-            .home-show-description {}
+            .home-show-description {
+                padding: 20px 0 20px 0;
+                margin-bottom: 20px;
+                line-height: 21px;
+                border-bottom: 1px solid #EBEBEB;
+
+                .read-more, .contact-host {
+                    padding: 30px 0 0 0;
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-weight: 500;
+                    color: #008489 !important;
+
+                    i {
+                        font-size: 12px;
+                    }
+                }
+            }
         }
         .home-show-map {
             display: block;
@@ -86,12 +104,12 @@
         .reservation-container {
             width: 50%;
             height: 40vh;
-            border: 1px solid rgb(207, 207, 207);
+            border: 1px solid #EBEBEB;
             margin: 0 0 0 54px;
 
             .price-container {
                 padding: 22px;
-                border-bottom: 1px solid rgb(207, 207, 207);
+                border-bottom: 1px solid #EBEBEB;
                 .price {
                     display: flex;
                     justify-content: flex-start;
@@ -99,25 +117,29 @@
                     padding: 0 0 8px 0;
 
                     .value {
-                        font-size: 20px;
+                        font-size: 24px;
                         font-weight: 800;
                     }
 
                     .word {
-                        font-size: 11px;
+                        font-size: 12px;
                         font-weight: 500;
-                        vertical-align: bottom;
+                        padding: 0 0 1px 0;
+                        // vertical-align: bottom;
                     }
                 }
 
                 .stars {
                     display: flex;
                     justify-content: flex-start;
-                    font-size: 9px;
-                    color: rgb(27, 139, 139); 
+                    align-items: center;
+                    font-size: 11px;
+                    color: #008489 !important;
 
                     .review-count {
                         color: rgb(72, 72, 72);
+                        font-weight: 500;
+                        font-size: 12px;
                     }
                 }
             }
