@@ -18,7 +18,6 @@
         justify-content: flex-end;
         flex-wrap: wrap;
         width: 55%;
-        // padding: 0 20px 0 0;
 
         .home-show-details {
             display: block;
@@ -97,18 +96,25 @@
         }
     }
     .home-show-right {
+        display: flex;
+        flex-wrap: wrap;
         width: 45%;
         // margin: 0 0 0 80px;
         height: 50vh;
 
         .reservation-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             width: 50%;
-            height: 40vh;
+            height: 47vh;
             border: 1px solid #EBEBEB;
             margin: 0 0 0 54px;
 
             .price-container {
-                padding: 22px;
+                height: 40px;
+                width: 85%;
+                padding: 20px 0 24px 0;
                 border-bottom: 1px solid #EBEBEB;
                 .price {
                     display: flex;
@@ -141,6 +147,206 @@
                         font-weight: 500;
                         font-size: 12px;
                     }
+                }
+            }
+
+            form {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .date-container {
+                padding: 20px 0 0 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 85%;
+
+                .date-label {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #484848 !important;
+                }
+
+                .calendar-input {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    padding: 6px 0 0 0;
+
+                    input[type="date"]::-webkit-clear-button {
+                        display: none;
+                    }
+
+                    input[type="date"]::-webkit-inner-spin-button {
+                        display: none;
+                    }
+
+                    input[type="date"]::-webkit-calendar-picker-indicator {
+                        color: #2c3e50;
+                    }
+
+                    input[type="date"] {
+                        width: 46%;
+                        height: 34px;
+                        appearance: none;
+                        -webkit-appearance: none;
+                        color: #ffffff;
+                        font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                        font-size: 18px;
+                        color: #484848;
+                        border: 1px solid #ecf0f1;
+                        background: #ffffff;
+                        padding: 5px 5px 0 5px;
+                        display: inline-block !important;
+                        visibility: visible !important;
+                    }
+
+                    input[type="date"],
+                    focus {
+                        color: #757575 !important;
+                        box-shadow: none;
+                        -webkit-box-shadow: none;
+                        -moz-box-shadow: none;
+                    }
+                }
+            }
+
+            .guest-container {
+                padding: 20px 0 0 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 85%;
+                .guest-label {
+                    padding: 0 0 6px 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #484848 !important;
+                }
+                .guest-input {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0px 0 0 0;
+                    border: 1px solid #EBEBEB;
+
+                    select {
+                        width: 100%;
+                        -webkit-appearance: menulist-button;
+                        height: 34px;
+                        color: #ffffff;
+                        font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                        font-size: 18px;
+                        color: #484848;
+                        border: none;
+                        background: #ffffff;
+                        display: inline-block !important;
+                        visibility: visible !important;
+                    }
+
+                    select,
+                    focus {
+                        
+                        color: #757575 !important;
+                        box-shadow: none;
+                        -webkit-box-shadow: none;
+                        -moz-box-shadow: none;
+                    }
+                }
+            }
+
+            .button-container {
+                padding: 25px 0 0 0;
+                width: 85%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                button {
+                    cursor: pointer !important;
+                    display: inline-block !important;
+                    margin: 0px !important;
+                    position: relative !important;
+                    text-align: center !important;
+                    text-decoration: none !important;
+                    -webkit-transition-property: background,
+                    border-color,
+                    color !important;
+                    -moz-transition-property: background,
+                    border-color,
+                    color !important;
+                    transition-property: background,
+                    border-color,
+                    color !important;
+                    -webkit-transition-duration: 0.2s !important;
+                    transition-duration: 0.2s !important;
+                    -webkit-transition-timing-function: ease-out !important;
+                    transition-timing-function: ease-out !important;
+                    border-radius: 4px !important;
+                    width: 100% !important;
+                    font-size: 16px !important;
+                    line-height: 22px !important;
+                    letter-spacing: normal !important;
+                    font-family: Circular,
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    Roboto,
+                    Helvetica Neue,
+                    sans-serif !important;
+                    text-transform: undefined !important;
+                    padding-top: 12px !important;
+                    padding-bottom: 12px !important;
+                    font-weight: 800 !important;
+                    border-width: 2px !important;
+                    border-style: solid !important;
+                    padding-left: 24px !important;
+                    padding-right: 24px !important;
+                    min-width: 77.66563145999496px !important;
+                    box-shadow: none !important;
+                    background: #FF5A5F !important;
+                    border-color: transparent !important;
+                    color: #ffffff !important;
+                }
+            }
+            .additional-info {
+                width: 85%;
+                padding: 0 0 10px 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                
+                .notice {
+                    text-align: center;
+                    width: 100%;
+                    padding: 15px 0 25px 0;
+                    font-size: 11px;
+                    font-weight: 500;
+                    border-bottom: 1px solid #EBEBEB;
+                }
+
+                .disclaimer-1 {
+                    text-align: center;
+                    width: 100%;
+                    padding: 15px 0 5px 0;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+
+                .disclaimer-2 {
+                    text-align: center;
+                    width: 100%;
+                    padding: 15px 0 5px 0;
+                    font-size: 14px;
+                    font-weight: 400;
                 }
             }
         }

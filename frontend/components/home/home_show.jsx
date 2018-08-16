@@ -102,6 +102,50 @@
                                     </div>
                                 </div>
                             </div>
+                            <form>
+                                <div className="date-container">
+                                    <div className="date-label">
+                                        <div>
+                                            <span>Dates</span>
+                                        </div>
+                                    </div>
+                                    <div className="calendar-input">
+                                        <input type="date" />
+                                        <input type="date" />
+                                    </div>
+                                </div>
+                                <div className="guest-container">
+                                    <div className="guest-label">
+                                        <div>
+                                            <span>Guests</span>
+                                        </div>
+                                    </div>
+                                    <div className="guest-input">
+                                        <select>
+                                            <option>1 Guest</option>
+                                            <option>2 Guests</option>
+                                            <option>3 Guests</option>
+                                            <option>4 Guests</option>
+                                            <option>5 Guests</option>
+                                            <option>6 Guests</option>
+                                            <option>7 Guests</option>
+                                            <option>8 Guests</option>
+                                            <option>9 Guests</option>
+                                            <option>10 Guests</option>
+                                            <option>11 Guests</option>
+                                            <option>12 Guests</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div className="button-container">
+                                    <button type="submit">Book</button>
+                                </div>
+                            </form>
+                            <div className="additional-info">
+                                <span className="notice">You won't be charged yet</span>
+                                <span className="disclaimer-1">This home is on people’s minds.</span>
+                                <span className="disclaimer-2">It’s been viewed 500+ times in the past week.</span>
+                            </div>
                         </div>
                     </div>
                 </div>

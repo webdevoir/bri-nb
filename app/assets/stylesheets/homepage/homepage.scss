@@ -37,7 +37,8 @@
 }
 
 .search-container input {
-    font-size: 1.1em !important;
+    font-size: 22px !important;
+    font-weight: 700;
     line-height: 22px !important;
     letter-spacing: normal !important;
     font-family: Circular,
@@ -47,7 +48,6 @@
     "Helvetica Neue",
     sans-serif !important;
     color: rgb(72, 72, 72) !important;
-    font-weight: normal !important;
     width: 100% !important;
     height: 72px;
     border: none;

@@ -11,7 +11,7 @@ class Homepage extends React.Component {
     }
 
     componentDidMount() {
-        const input = document.getElementById('autocomplete');
+        const input = document.getElementById('autocomplete1');
         const searchBox = new google.maps.places.SearchBox(input);
         searchBox.addListener('places_changed', () => this.handleSubmit());
     }
@@ -44,7 +44,7 @@ class Homepage extends React.Component {
                                 type="text" 
                                 placeholder="Try 'Homes in Tokyo'" 
                                 onChange={this.update("search_content")}
-                                id="autocomplete"
+                                id="autocomplete1"
                             />
                         </form>
                     </div>

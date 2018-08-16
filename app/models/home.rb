@@ -5,7 +5,7 @@
 #  id                  :bigint(8)        not null, primary key
 #  host_id             :integer          not null
 #  name                :string           not null
-#  city                :string           not null 
+#  city                :string           not null
 #  max_guests          :integer          not null
 #  num_rooms           :integer          not null
 #  num_beds            :integer          not null
@@ -35,6 +35,10 @@ class Home < ApplicationRecord
     # has_many :amenities,
     #     foreign_key: :home_id,
     #     class_name: :Amenity
+
+    has_many :reviews,
+        foreign_key: :home_id,
+        class_name: :Review
 
     def self.in_bounds(bounds)
         self.where("lat < ?", bounds[:northEast][:lat])
