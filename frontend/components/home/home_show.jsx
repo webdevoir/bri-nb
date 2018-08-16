@@ -70,6 +70,9 @@
                                 </div>
                             </div>
                         </div>
+                        <div className="amenities-container">
+
+                        </div>
                         <div className="home-show-map">
                             <Map
                                 show="true"

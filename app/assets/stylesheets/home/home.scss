@@ -2,7 +2,7 @@
     width: 100%;
     height: 72vh;
     text-align: center;
-    background-image: url(https://lh3.googleusercontent.com/aLzsmKAwprN-vSMJ0rc4m9Nbu_BrPWcn-2m4gMVrgFt5F4kEPpOWWnrbOhhPb03e3AyZqZAdZRuQbhxjuFmLM5-5cnV3hRvIVmGg7fVJCuw9gZ-fos_dD4AJ7PWxWLbHekacCLHkaJ1JKMiDehggRAkklyo50A64v4o4be0LL8IeqICSgVCfkXP__R-Ziuv0taHLoGzbDk0y3MfDYoc_swJE0eqh5gpYrNUdOy5bn6rawA5_yyYi3K7GnFOT8o6Sil9tWD7URzDHeQUvvH2mNepxoSCzcV1LK_eSaybMxURREjeKnRQQbthth2ouFWDfJrWsaHRMkHURuiLJ_zrrptSLDsvXRtgF4fuBGSi5M6YYWvGrWLSP0QpIZG-EIhISCl8w1k84oJHmnOe74wbW92w1TY_VpK9_PmLis3IX9kgyJY6ppffW9IyIrzyJAtd2k36yZhMkCaUZWu_aUhzKHoYiKgjuzlpT8rDR1QnQoKMoysuTt0rvAs2xqmVM0wXjV9elTNtg4nRkTtjZRDVXeBzG2cvMRCvqvq9tOnzQ-Tyu4OdSzE9IfjVR_vYnHjK-kXQoriezvX__F1R2-s-mUykG_tARf6-LQnzd-D1c=w2901-h1813-no);
+    background-image: url(https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -14,6 +14,8 @@
     color: rgb(72, 72, 72) !important;
     padding: 25px 0 0 0;
     .home-show-left {
+        overflow: auto;
+        height: 100%;
         display: flex;
         justify-content: flex-end;
         flex-wrap: wrap;
@@ -81,6 +83,11 @@
                 }
             }
         }
+        .amenities-container {
+            width: 65%;
+            height: 40vh;
+            background-color: rgb(186, 186, 197);
+        }
         .home-show-map {
             display: block;
             width: 65%;
@@ -100,7 +107,7 @@
         flex-wrap: wrap;
         width: 45%;
         // margin: 0 0 0 80px;
-        height: 50vh;
+        // height: 200px;
 
         .reservation-container {
             display: flex;

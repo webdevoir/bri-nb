@@ -41,7 +41,6 @@ class Map extends React.Component {
 
     componentDidUpdate() {
         this.MarkerManager.updateMarkers(this.props.homes);
-
     }
 
     addHome(home) {
@@ -52,11 +51,23 @@ class Map extends React.Component {
             map: this.map
         });
 
+        const infowindow = new google.maps.InfoWindow();
+
         this.bounds.extend(pos);
 
         marker.addListener('click', () => {
             this.props.history.push(`/homes/${home.id}`);
         });
+
+        marker.addListener('mouseover', function () {
+            infowindow.setContent(home.name);
+            infowindow.open(this.map, marker);
+        });
+
+        marker.addListener('mouseout', function () {
+            infowindow.close();
+        });
+
         this.map.panToBounds(this.bounds);
     }
 
